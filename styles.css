@@ -1,0 +1,134 @@
+:root {
+  --primary: rgb(55, 140, 182);
+  --secondary: honeydew;
+  --accent: rgb(15, 106, 152);
+  --text: black;
+  --background: mintcream;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+body {
+  background-image: url('images/backimage.png'); 
+  background-size:contain;
+  background-position: center;
+  background-attachment: fixed;
+}
+h2 {
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 0.3em;
+  margin-bottom: 1em;
+}
+main > h2 {
+  color: white;
+}
+
+header {
+  background-color: var(--primary);
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+  padding: 0;
+  margin-top: 1em;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  padding: 2em;
+}
+
+h2 {
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 0.3em;
+  margin-bottom: 1em;
+}
+main > h2 {
+  color: white;
+}
+.box {
+  background-color:rgba(255, 255, 255, 0.6);
+  padding: 1.5em;
+  margin: 1em 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  justify-content: center;
+}
+
+.card {
+  flex: 1 1 250px;
+  background-color: var(--background);
+  border: 2px solid var(--primary);
+  border-radius: 10px;
+  padding: 1em;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.image-placeholder {
+  background-color: lightgray;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: dimgray;
+  margin-bottom: 1em;
+  font-size: 0.9em;
+}
+
+footer {
+  background-color: var(--accent);
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(55, 140, 182, 0.9);
+  border-radius: 18px;
+  padding: 2em 2em;
+  margin-bottom: 1em;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  gap: 1.5em;
+}
+
+.profile-header h1 {
+  font-size: 2.8em;
+  margin: 0;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+.profile-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}

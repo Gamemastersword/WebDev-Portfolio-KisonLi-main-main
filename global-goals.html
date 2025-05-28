@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Global Goal - No Poverty</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .box {
+      background-color: #ffffff !important;
+      color: #000000 !important;
+    }
+    .fact-box {
+      margin-top: 1em;
+      padding: 1em;
+      background-color: #f0f0f0;
+      border-left: 5px solid #0b74a7;
+      display: none;
+    }
+    button {
+      padding: 0.5em 1em;
+      font-weight: bold;
+      background-color: #378cb6;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 1em;
+    }
+    button:hover {
+      background-color: #2a6b8c;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="profile-header">
+    <h1>Global goals</h1>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="behind.html">Behind the Curtain</a></li>
+      <li><a href="accessibility.html">accessibility</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="box">
+    <h2>UN Global Goal: No Poverty</h2>
+    <p><strong>Goal:</strong> End poverty in all its forms everywhere.</p>
+
+    <p>Poverty affects millions of people around the world and limits access to basic needs like food, shelter, education, and healthcare. Supporting this goal means working toward a fairer, more equal society.</p>
+
+    <h3>Interactive: Did You Know?</h3>
+    <hr>
+      About how many people still live on less than $1.90 a day?
+    <button onclick="document.getElementById('fact').style.display='block'">Click to find the answer!</button>
+    <div class="fact-box" id="fact">
+      <strong>Answer:</strong> Over 700 million people still live on less than $1.90 a day.
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© 2025 Kison Li</p>
+</footer>
+</body>
+</html>

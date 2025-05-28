@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Behind the Curtain - Kison's Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .box {
+      background-color: #ffffff !important;
+      color: #000000 !important;
+    }
+    .grid-gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-bottom: 2em;
+    }
+    .grid-gallery img {
+      width: 100%;
+      height: auto;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+    }
+    .steps {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+    }
+    .step {
+      border-left: 5px solid var(--primary);
+      padding: 1em;
+      background-color: #f8f8f8;
+      border-radius: 8px;
+    }
+    .step h4 {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="profile-header">
+    <h1>Behind the Curtain</h1>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="global-goals.html">Global Goal</a></li>
+      <li><a href="accessibility.html">Accessibility</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="box">
+    <h2>Behind the Curtain</h2>
+    <p>This page shows the process of how I built my website, step by step, and some of the code snapshots I took along the way.</p>
+
+    <h3>Development Screenshots</h3>
+    <div class="grid-gallery">
+      <img src="images/step1.png" alt="Step 1">
+      <img src="images/step2.png" alt="Step 2">
+      <img src="images/step3.png" alt="Step 3">
+      <img src="images/step4.png" alt="Step 4">
+      <img src="images/step5.png" alt="Step 5">
+      <img src="images/step6.png" alt="Step 6">
+      <img src="images/step7.png" alt="Step 7">
+      <img src="images/step8.png" alt="Step 8">
+      <img src="images/step9.png" alt="Step 9">
+    </div>
+
+    <h3>My Process (Step-by-Step)</h3>
+    <div class="steps">
+      <div class="step">
+        <h4>Step 1: Layout Design</h4>
+        <p>I first planned out the homepage structure on paper, thinking about what sections I need and how to organize them.</p>
+      </div>
+      <div class="step">
+        <h4>Step 2: Initial Coding</h4>
+        <p>I created the basic structure using HTML, CSS, and JavaScript to set up layout and navigation logic.</p>
+      </div>
+      <div class="step">
+        <h4>Step 3: Background and Content</h4>
+        <p>I chose the background image and color scheme, then filled in my personal information and project summaries.</p>
+      </div>
+      <div class="step">
+        <h4>Step 4: Subpage Development</h4>
+        <p>I wrote additional HTML files for each project, and connected them to the main page with proper links.</p>
+      </div>
+      <div class="step">
+        <h4>Step 5: Final Testing</h4>
+        <p>I checked functionality on different devices and asked classmates to test usability and design clarity.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© 2025 Kison Li</p>
+</footer>
+
+</body>
+</html>

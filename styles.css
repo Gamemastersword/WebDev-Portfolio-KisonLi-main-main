@@ -132,3 +132,25 @@ footer {
   border: 3px solid #fff;
   box-shadow: 0 2px 8px rgba(0,0,0,0.10);
 }
+.nav-home {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.nav-home li a {
+  font-size: 1.1em;
+  font-weight: bold;
+  text-decoration: none;
+}
+.nav-home li a {
+  font-size: 1.3em;       
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff !important;
+}
+main, footer {
+  color: #000;
+}

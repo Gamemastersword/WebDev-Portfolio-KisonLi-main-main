@@ -56,10 +56,17 @@
     <h3>Interactive: Did You Know?</h3>
     <hr>
       About how many people still live on less than $1.90 a day?
-    <button onclick="document.getElementById('fact').style.display='block'">Click to find the answer!</button>
+        <button onclick="showFactAndImage()">Click to find the answer!</button>
     <div class="fact-box" id="fact">
       <strong>Answer:</strong> Over 700 million people still live on less than $1.90 a day.
     </div>
+    <img id="poverty-img" src="images/UN.png" alt="Poverty illustration" style="display:none; margin-top:1em; max-width:100%; border-radius:8px;">
+<script>
+  function showFactAndImage() {
+    document.getElementById('fact').style.display = 'block';
+    document.getElementById('poverty-img').style.display = 'block';
+  }
+</script>
   </section>
 </main>
 

@@ -1,29 +1,38 @@
+/* Root color variables for consistent theme */
 :root {
-  --primary: rgb(55, 140, 182);
-  --secondary: honeydew;
-  --accent: rgb(15, 106, 152);
-  --text: black;
-  --background: mintcream;
+  --primary: rgb(55, 140, 182);     /* Main theme color */
+  --secondary: honeydew;            /* Soft background or accent */
+  --accent: rgb(15, 106, 152);      /* Accent for borders or highlights */
+  --text: black;                    /* Default text color */
+  --background: mintcream;          /* General background color */
 }
 
+/* Global font style */
 body {
   font-family: 'Segoe UI', sans-serif;
 }
+
+/* Background image settings */
 body {
-  background-image: url('images/backimage.png'); 
-  background-size:contain;
+  background-image: url('images/backimage.png');
+  background-size: contain;
   background-position: center;
   background-attachment: fixed;
 }
+
+/* Heading style with underline effect */
 h2 {
   border-bottom: 2px solid var(--accent);
   padding-bottom: 0.3em;
   margin-bottom: 1em;
 }
+
+/* Special color for main page h2 headings */
 main > h2 {
   color: white;
 }
 
+/* Header section styling */
 header {
   background-color: var(--primary);
   color: white;
@@ -31,6 +40,7 @@ header {
   text-align: center;
 }
 
+/* Navigation bar list layout */
 nav ul {
   list-style: none;
   display: flex;
@@ -41,24 +51,19 @@ nav ul {
   margin-top: 1em;
 }
 
+/* Navigation link style */
 nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
 }
 
+/* Main content padding */
 main {
   padding: 2em;
 }
 
-h2 {
-  border-bottom: 2px solid var(--accent);
-  padding-bottom: 0.3em;
-  margin-bottom: 1em;
-}
-main > h2 {
-  color: white;
-}
+/* White content box style (used for content sections) */
 .box {
   background-color: #fff;
   padding: 1.5em;
@@ -67,7 +72,7 @@ main > h2 {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-
+/* Card layout using Flexbox */
 .card-grid {
   display: flex;
   flex-wrap: wrap;
@@ -75,6 +80,7 @@ main > h2 {
   justify-content: center;
 }
 
+/* Individual card design */
 .card {
   flex: 1 1 250px;
   background-color: var(--background);
@@ -84,10 +90,12 @@ main > h2 {
   transition: transform 0.3s ease;
 }
 
+/* Zoom effect on card hover */
 .card:hover {
   transform: scale(1.05);
 }
 
+/* Placeholder box for image area */
 .image-placeholder {
   background-color: lightgray;
   height: 150px;
@@ -99,12 +107,15 @@ main > h2 {
   font-size: 0.9em;
 }
 
+/* Footer style */
 footer {
   background-color: var(--accent);
   color: white;
   text-align: center;
   padding: 1em;
 }
+
+/* Profile header layout (avatar and title) */
 .profile-header {
   display: flex;
   align-items: center;
@@ -117,6 +128,7 @@ footer {
   gap: 1.5em;
 }
 
+/* Profile name text */
 .profile-header h1 {
   font-size: 2.8em;
   margin: 0;
@@ -124,6 +136,7 @@ footer {
   letter-spacing: 2px;
 }
 
+/* Profile image/avatar style */
 .profile-avatar {
   width: 80px;
   height: 80px;
@@ -132,6 +145,8 @@ footer {
   border: 3px solid #fff;
   box-shadow: 0 2px 8px rgba(0,0,0,0.10);
 }
+
+/* Home page navigation position */
 .nav-home {
   position: absolute;
   top: 30px;
@@ -140,17 +155,23 @@ footer {
   padding: 0;
   list-style: none;
 }
+
+/* Home nav link base style */
 .nav-home li a {
   font-size: 1.1em;
   font-weight: bold;
   text-decoration: none;
 }
+
+/* Home nav link final style with white color */
 .nav-home li a {
-  font-size: 1.3em;       
+  font-size: 1.3em;
   font-weight: bold;
   text-decoration: none;
   color: #fff !important;
 }
+
+/* Default text color inside main and footer */
 main, footer {
   color: #000;
 }

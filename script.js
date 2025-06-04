@@ -13,3 +13,4 @@ document.querySelectorAll(".card").forEach(function (card) {
     alert("You clicked: " + card.querySelector("h3").textContent);
   });
 });
+  
